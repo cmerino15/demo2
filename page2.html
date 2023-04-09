@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1" />
+    <title>Tests</title>
+    <script src="./javascript/page2.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <a href="index.html">
+        <img class="bannerimg" src="./images/splash.png" alt="splash logo" />
+      </a>
+      <h1 id="heading1">Tests</h1>
+    </div>
+
+    <div class="img1 flexbox1">
+      <div class="app app1">
+        App1
+        <form class="form-inline">
+          <input
+            type="number"
+            class="form-control"
+            id="num1"
+            value="something"
+            placeholder="number"
+          />
+        </form>
+        <div class="app1manip">
+          <button type="submit" onclick="func1()">times 100</button>
+          <div class="input-group">
+            <textarea id="output" cols="30" rows="2">output</textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="app app2">
+        Registration
+        <form action="results.html" method="POST" enctype="multipart/form-data">
+          <div>
+            <label for="name"></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="username"
+              require
+            />
+          </div>
+          <div>
+            <input type="hidden" name="hidden" value="user#" />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="username@email.com"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="yourpassword"
+              required
+            />
+          </div>
+          <button type="submit" onclick="func2()">Submit</button>
+        </form>
+      </div>
+
+      <div class="app app3">
+        Sign In
+        <form action="results1.html" method="GET" enctype="multipart/form-data">
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="username"
+              required
+            />
+          </div>
+          <input type="hidden" name="loginattempt" value="loginattempt" />
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+              required
+            />
+          </div>
+          <button type="submit" value="submit" onclick="func3()">Submit</button>
+        </form>
+      </div>
+      <div class="app app4">
+        Upload
+        <form action="results.html" method="POST" enctype="multipart/form-data">
+          <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="name" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="img4">
+      <textarea class="codebox">Code Box: </textarea>
+    </div>
+    <div>
+      <a href="index.html"> Home Page </a>
+    </div>
+  </body>
+</html>
